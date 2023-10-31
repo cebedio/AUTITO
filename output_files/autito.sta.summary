@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.882
+TNS   : -7.528
+
+Type  : Slow 1200mV 85C Model Setup 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -1.715
+TNS   : -6.860
+
+Type  : Slow 1200mV 85C Model Setup 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.712
+TNS   : -6.848
+
+Type  : Slow 1200mV 85C Model Setup 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.879
+TNS   : -5.860
+
+Type  : Slow 1200mV 85C Model Setup 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2498.443
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -0.670
+TNS   : -1.338
+
+Type  : Slow 1200mV 85C Model Hold 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -0.636
+TNS   : -1.270
+
+Type  : Slow 1200mV 85C Model Hold 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.451
+TNS   : -0.947
+
+Type  : Slow 1200mV 85C Model Hold 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : 0.570
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : 9.835
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1249.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 244139.752
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.576
+TNS   : -6.304
+
+Type  : Slow 1200mV 0C Model Setup 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.418
+TNS   : -5.672
+
+Type  : Slow 1200mV 0C Model Setup 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -1.418
+TNS   : -5.672
+
+Type  : Slow 1200mV 0C Model Setup 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.661
+TNS   : -4.020
+
+Type  : Slow 1200mV 0C Model Setup 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2498.609
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -0.623
+TNS   : -1.239
+
+Type  : Slow 1200mV 0C Model Hold 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -0.606
+TNS   : -1.205
+
+Type  : Slow 1200mV 0C Model Hold 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.467
+TNS   : -1.268
+
+Type  : Slow 1200mV 0C Model Hold 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.817
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1249.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 244139.748
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -0.592
+TNS   : -2.368
+
+Type  : Fast 1200mV 0C Model Setup 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -0.499
+TNS   : -1.995
+
+Type  : Fast 1200mV 0C Model Setup 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -0.489
+TNS   : -1.956
+
+Type  : Fast 1200mV 0C Model Setup 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.340
+TNS   : -1.720
+
+Type  : Fast 1200mV 0C Model Setup 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2499.132
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -0.370
+TNS   : -0.737
+
+Type  : Fast 1200mV 0C Model Hold 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -0.354
+TNS   : -0.705
+
+Type  : Fast 1200mV 0C Model Hold 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.287
+TNS   : -0.710
+
+Type  : Fast 1200mV 0C Model Hold 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.587
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1249.782
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst|inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 244139.785
+TNS   : 0.000
+
+------------------------------------------------------------

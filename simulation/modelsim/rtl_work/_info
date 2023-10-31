@@ -1,0 +1,60 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Celeste\Desktop\Lab_autito_2023\simulation\modelsim
+valtpll0_altpll
+IbNiTh41TO_SEaikzfJ_^60
+Vnhz6_dhPc<8=E=Qkb;<Q82
+Z1 dC:\Users\Celeste\Desktop\Lab_autito_2023\simulation\modelsim
+w1698073203
+8C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll0_altpll.v
+FC:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll0_altpll.v
+L0 29
+Z2 OV;L;10.1d;51
+r1
+31
+o-vlog01compat -work work -O0
+!i10b 1
+!s100 8da1DELFkYkL6z73NI4Gm1
+!s85 0
+!s108 1698609508.126000
+!s107 C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Celeste/Desktop/Lab_autito_2023/db|C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Celeste/Desktop/Lab_autito_2023/db -O0
+Emaquina_control
+Z3 w1698607761
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R1
+Z6 8C:/Users/Celeste/Desktop/Lab_autito_2023/maquina_control.vhd
+Z7 FC:/Users/Celeste/Desktop/Lab_autito_2023/maquina_control.vhd
+l0
+L21
+V:>;zCP4Wzbh1mm8T>kKCi0
+!s100 zP1g:VIlATXVS<I^hUXP]2
+Z8 OV;C;10.1d;51
+31
+!i10b 1
+Z9 !s108 1698609508.720000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/Celeste/Desktop/Lab_autito_2023/maquina_control.vhd|
+Z11 !s107 C:/Users/Celeste/Desktop/Lab_autito_2023/maquina_control.vhd|
+Z12 o-93 -work work -O0
+Z13 tExplicit 1
+Abehavior
+R4
+R5
+DEx4 work 15 maquina_control 0 22 :>;zCP4Wzbh1mm8T>kKCi0
+l36
+L32
+Vbf;;K@`DJ[YFbP]QB6ao;0
+!s100 =ZlbDlOznQlz8?Z_blf_f0
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13
