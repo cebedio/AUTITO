@@ -1,5 +1,5 @@
 Fitter report for autito
-Mon Oct 30 20:47:22 2023
+Mon Oct 30 22:59:10 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -71,15 +71,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Oct 30 20:47:22 2023           ;
+; Fitter Status                      ; Successful - Mon Oct 30 22:59:10 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; autito                                          ;
 ; Top-level Entity Name              ; autito_principal                                ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C6                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 100 / 22,320 ( < 1 % )                          ;
-;     Total combinational functions  ; 96 / 22,320 ( < 1 % )                           ;
+; Total logic elements               ; 96 / 22,320 ( < 1 % )                           ;
+;     Total combinational functions  ; 92 / 22,320 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 59 / 22,320 ( < 1 % )                           ;
 ; Total registers                    ; 59                                              ;
 ; Total pins                         ; 30 / 154 ( 19 % )                               ;
@@ -197,7 +197,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------------------------------------------------------------+------------+-------------+------------------------+-----------+-------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------+
 ; Node                                                                                              ; Action     ; Operation   ; Reason                 ; Node Port ; Node Port Name                                              ; Destination Node                                                                             ; Destination Port ; Destination Port Name                                     ;
 +---------------------------------------------------------------------------------------------------+------------+-------------+------------------------+-----------+-------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------+
+; velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1    ; Merged PLL ; PLL Merging ; PLL Usage Optimization ;           ;                                                             ; altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|pll1                     ;                  ;                                                           ;
 ;    velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1 ; Merged PLL ; PLL Merging ; PLL Usage Optimization ; CLK       ; IZQUIERDO|inst1|altpll_component|auto_generated|pll1/clk[0] ; altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|pll1                     ; CLK              ; inst4|altpll_component|auto_generated|pll1/clk[0]         ;
+; altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|pll1                          ; Merged PLL ; PLL Merging ; PLL Usage Optimization ;           ;                                                             ; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1 ;                  ;                                                           ;
 ;    altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|pll1                       ; Merged PLL ; PLL Merging ; PLL Usage Optimization ; CLK       ; inst4|altpll_component|auto_generated|pll1/clk[0]           ; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1 ; CLK              ; DERECHO|inst1|altpll_component|auto_generated|pll1/clk[0] ;
 +---------------------------------------------------------------------------------------------------+------------+-------------+------------------------+-----------+-------------------------------------------------------------+----------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------+
 
@@ -208,8 +210,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 230 ( 0.00 % )     ;
-;     -- Achieved     ; 0 / 230 ( 0.00 % )     ;
+;     -- Requested    ; 0 / 226 ( 0.00 % )     ;
+;     -- Achieved     ; 0 / 226 ( 0.00 % )     ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -232,7 +234,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 216     ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 212     ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 14      ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -240,129 +242,129 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/autito.pin.
+The pin-out file can be found in C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/autito.pin.
 
 
-+----------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                        ;
-+---------------------------------------------+------------------------+
-; Resource                                    ; Usage                  ;
-+---------------------------------------------+------------------------+
-; Total logic elements                        ; 100 / 22,320 ( < 1 % ) ;
-;     -- Combinational with no register       ; 41                     ;
-;     -- Register only                        ; 4                      ;
-;     -- Combinational with a register        ; 55                     ;
-;                                             ;                        ;
-; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 25                     ;
-;     -- 3 input functions                    ; 2                      ;
-;     -- <=2 input functions                  ; 69                     ;
-;     -- Register only                        ; 4                      ;
-;                                             ;                        ;
-; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 74                     ;
-;     -- arithmetic mode                      ; 22                     ;
-;                                             ;                        ;
-; Total registers*                            ; 59 / 23,018 ( < 1 % )  ;
-;     -- Dedicated logic registers            ; 59 / 22,320 ( < 1 % )  ;
-;     -- I/O registers                        ; 0 / 698 ( 0 % )        ;
-;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 9 / 1,395 ( < 1 % )    ;
-; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 30 / 154 ( 19 % )      ;
-;     -- Clock pins                           ; 4 / 7 ( 57 % )         ;
-;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
-;                                             ;                        ;
-; Global signals                              ; 3                      ;
-; M9Ks                                        ; 0 / 66 ( 0 % )         ;
-; Total block memory bits                     ; 0 / 608,256 ( 0 % )    ;
-; Total block memory implementation bits      ; 0 / 608,256 ( 0 % )    ;
-; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )        ;
-; PLLs                                        ; 2 / 4 ( 50 % )         ;
-; Global clocks                               ; 3 / 20 ( 15 % )        ;
-; JTAGs                                       ; 0 / 1 ( 0 % )          ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
-; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
-; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%           ;
-; Maximum fan-out                             ; 63                     ;
-; Highest non-global fan-out                  ; 63                     ;
-; Total fan-out                               ; 484                    ;
-; Average fan-out                             ; 2.07                   ;
-+---------------------------------------------+------------------------+
++---------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                       ;
++---------------------------------------------+-----------------------+
+; Resource                                    ; Usage                 ;
++---------------------------------------------+-----------------------+
+; Total logic elements                        ; 96 / 22,320 ( < 1 % ) ;
+;     -- Combinational with no register       ; 37                    ;
+;     -- Register only                        ; 4                     ;
+;     -- Combinational with a register        ; 55                    ;
+;                                             ;                       ;
+; Logic element usage by number of LUT inputs ;                       ;
+;     -- 4 input functions                    ; 21                    ;
+;     -- 3 input functions                    ; 7                     ;
+;     -- <=2 input functions                  ; 64                    ;
+;     -- Register only                        ; 4                     ;
+;                                             ;                       ;
+; Logic elements by mode                      ;                       ;
+;     -- normal mode                          ; 70                    ;
+;     -- arithmetic mode                      ; 22                    ;
+;                                             ;                       ;
+; Total registers*                            ; 59 / 23,018 ( < 1 % ) ;
+;     -- Dedicated logic registers            ; 59 / 22,320 ( < 1 % ) ;
+;     -- I/O registers                        ; 0 / 698 ( 0 % )       ;
+;                                             ;                       ;
+; Total LABs:  partially or completely used   ; 7 / 1,395 ( < 1 % )   ;
+; Virtual pins                                ; 0                     ;
+; I/O pins                                    ; 30 / 154 ( 19 % )     ;
+;     -- Clock pins                           ; 4 / 7 ( 57 % )        ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )         ;
+;                                             ;                       ;
+; Global signals                              ; 3                     ;
+; M9Ks                                        ; 0 / 66 ( 0 % )        ;
+; Total block memory bits                     ; 0 / 608,256 ( 0 % )   ;
+; Total block memory implementation bits      ; 0 / 608,256 ( 0 % )   ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ;
+; PLLs                                        ; 2 / 4 ( 50 % )        ;
+; Global clocks                               ; 3 / 20 ( 15 % )       ;
+; JTAGs                                       ; 0 / 1 ( 0 % )         ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
+; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%          ;
+; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%          ;
+; Maximum fan-out                             ; 65                    ;
+; Highest non-global fan-out                  ; 65                    ;
+; Total fan-out                               ; 472                   ;
+; Average fan-out                             ; 2.05                  ;
++---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+------------------------------------------------------------------------------------------------------+
-; Fitter Partition Statistics                                                                          ;
-+---------------------------------------------+-----------------------+--------------------------------+
-; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
-+---------------------------------------------+-----------------------+--------------------------------+
-; Difficulty Clustering Region                ; Low                   ; Low                            ;
-;                                             ;                       ;                                ;
-; Total logic elements                        ; 100 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
-;     -- Combinational with no register       ; 41                    ; 0                              ;
-;     -- Register only                        ; 4                     ; 0                              ;
-;     -- Combinational with a register        ; 55                    ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 25                    ; 0                              ;
-;     -- 3 input functions                    ; 2                     ; 0                              ;
-;     -- <=2 input functions                  ; 69                    ; 0                              ;
-;     -- Register only                        ; 4                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 74                    ; 0                              ;
-;     -- arithmetic mode                      ; 22                    ; 0                              ;
-;                                             ;                       ;                                ;
-; Total registers                             ; 59                    ; 0                              ;
-;     -- Dedicated logic registers            ; 59 / 22320 ( < 1 % )  ; 0 / 22320 ( 0 % )              ;
-;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 9 / 1395 ( < 1 % )    ; 0 / 1395 ( 0 % )               ;
-;                                             ;                       ;                                ;
-; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 30                    ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ; 0 / 132 ( 0 % )                ;
-; Total memory bits                           ; 0                     ; 0                              ;
-; Total RAM block bits                        ; 0                     ; 0                              ;
-; PLL                                         ; 0 / 4 ( 0 % )         ; 2 / 4 ( 50 % )                 ;
-; Clock control block                         ; 1 / 24 ( 4 % )        ; 2 / 24 ( 8 % )                 ;
-;                                             ;                       ;                                ;
-; Connections                                 ;                       ;                                ;
-;     -- Input Connections                    ; 47                    ; 2                              ;
-;     -- Registered Input Connections         ; 47                    ; 0                              ;
-;     -- Output Connections                   ; 2                     ; 47                             ;
-;     -- Registered Output Connections        ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 475                   ; 58                             ;
-;     -- Registered Connections               ; 195                   ; 0                              ;
-;                                             ;                       ;                                ;
-; External Connections                        ;                       ;                                ;
-;     -- Top                                  ; 0                     ; 49                             ;
-;     -- hard_block:auto_generated_inst       ; 49                    ; 0                              ;
-;                                             ;                       ;                                ;
-; Partition Interface                         ;                       ;                                ;
-;     -- Input Ports                          ; 7                     ; 4                              ;
-;     -- Output Ports                         ; 23                    ; 4                              ;
-;     -- Bidir Ports                          ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Registered Ports                            ;                       ;                                ;
-;     -- Registered Input Ports               ; 0                     ; 0                              ;
-;     -- Registered Output Ports              ; 0                     ; 0                              ;
-;                                             ;                       ;                                ;
-; Port Connectivity                           ;                       ;                                ;
-;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
-;     -- Input Ports with no Source           ; 0                     ; 0                              ;
-;     -- Output Ports with no Source          ; 0                     ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                     ; 3                              ;
-;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
-+---------------------------------------------+-----------------------+--------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                         ;
++---------------------------------------------+----------------------+--------------------------------+
+; Statistic                                   ; Top                  ; hard_block:auto_generated_inst ;
++---------------------------------------------+----------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                  ; Low                            ;
+;                                             ;                      ;                                ;
+; Total logic elements                        ; 96 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+;     -- Combinational with no register       ; 37                   ; 0                              ;
+;     -- Register only                        ; 4                    ; 0                              ;
+;     -- Combinational with a register        ; 55                   ; 0                              ;
+;                                             ;                      ;                                ;
+; Logic element usage by number of LUT inputs ;                      ;                                ;
+;     -- 4 input functions                    ; 21                   ; 0                              ;
+;     -- 3 input functions                    ; 7                    ; 0                              ;
+;     -- <=2 input functions                  ; 64                   ; 0                              ;
+;     -- Register only                        ; 4                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Logic elements by mode                      ;                      ;                                ;
+;     -- normal mode                          ; 70                   ; 0                              ;
+;     -- arithmetic mode                      ; 22                   ; 0                              ;
+;                                             ;                      ;                                ;
+; Total registers                             ; 59                   ; 0                              ;
+;     -- Dedicated logic registers            ; 59 / 22320 ( < 1 % ) ; 0 / 22320 ( 0 % )              ;
+;                                             ;                      ;                                ;
+; Total LABs:  partially or completely used   ; 7 / 1395 ( < 1 % )   ; 0 / 1395 ( 0 % )               ;
+;                                             ;                      ;                                ;
+; Virtual pins                                ; 0                    ; 0                              ;
+; I/O pins                                    ; 30                   ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )      ; 0 / 132 ( 0 % )                ;
+; Total memory bits                           ; 0                    ; 0                              ;
+; Total RAM block bits                        ; 0                    ; 0                              ;
+; PLL                                         ; 0 / 4 ( 0 % )        ; 2 / 4 ( 50 % )                 ;
+; Clock control block                         ; 1 / 24 ( 4 % )       ; 2 / 24 ( 8 % )                 ;
+;                                             ;                      ;                                ;
+; Connections                                 ;                      ;                                ;
+;     -- Input Connections                    ; 47                   ; 2                              ;
+;     -- Registered Input Connections         ; 47                   ; 0                              ;
+;     -- Output Connections                   ; 2                    ; 47                             ;
+;     -- Registered Output Connections        ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Internal Connections                        ;                      ;                                ;
+;     -- Total Connections                    ; 463                  ; 58                             ;
+;     -- Registered Connections               ; 187                  ; 0                              ;
+;                                             ;                      ;                                ;
+; External Connections                        ;                      ;                                ;
+;     -- Top                                  ; 0                    ; 49                             ;
+;     -- hard_block:auto_generated_inst       ; 49                   ; 0                              ;
+;                                             ;                      ;                                ;
+; Partition Interface                         ;                      ;                                ;
+;     -- Input Ports                          ; 7                    ; 4                              ;
+;     -- Output Ports                         ; 23                   ; 4                              ;
+;     -- Bidir Ports                          ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Registered Ports                            ;                      ;                                ;
+;     -- Registered Input Ports               ; 0                    ; 0                              ;
+;     -- Registered Output Ports              ; 0                    ; 0                              ;
+;                                             ;                      ;                                ;
+; Port Connectivity                           ;                      ;                                ;
+;     -- Input Ports driven by GND            ; 0                    ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                    ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                    ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                    ; 0                              ;
+;     -- Input Ports with no Source           ; 0                    ; 0                              ;
+;     -- Output Ports with no Source          ; 0                    ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                    ; 3                              ;
+;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
++---------------------------------------------+----------------------+--------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -372,7 +374,7 @@ The pin-out file can be found in C:/Users/Celeste/Desktop/Lab_autito_2023/output
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; CLK             ; R8    ; 3        ; 27           ; 0            ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; Enable_seg      ; T8    ; 3        ; 27           ; 0            ; 14           ; 12                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
-; RESET           ; J15   ; 5        ; 53           ; 14           ; 0            ; 63                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
+; RESET           ; J15   ; 5        ; 53           ; 14           ; 0            ; 65                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SEGMENTO_ENABLE ; M15   ; 5        ; 53           ; 17           ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SENSOR[0]       ; A8    ; 8        ; 25           ; 34           ; 14           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 ; SENSOR[1]       ; B8    ; 8        ; 25           ; 34           ; 21           ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
@@ -765,8 +767,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +---------------------------------------------------------------------------------------------------------------------+--------------+------+-------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+-----------------------------------------------------------+
 ; Name                                                                                                                ; Output Clock ; Mult ; Div   ; Output Frequency ; Phase Shift ; Phase Shift Step ; Duty Cycle ; Counter ; Counter Value ; High / Low   ; Cascade Input ; Initial ; VCO Tap ; SDC Pin Name                                              ;
 +---------------------------------------------------------------------------------------------------------------------+--------------+------+-------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+-----------------------------------------------------------+
-; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0]            ; clock0       ; 1    ; 125   ; 0.4 MHz          ; 0 (0 ps)    ; 0.09 (208 ps)    ; 50/50      ; C1      ; 500           ; 250/250 Even ; C0            ; 1       ; 0       ; DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0] ;
-; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0]~cascade_in ; --           ; --   ; --    ; --               ; --          ; --               ; --         ; C0      ; 3             ; 1/2 Odd      ; --            ; 1       ; 0       ;                                                           ;
+; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0]            ; clock0       ; 1    ; 10000 ; 0.01 MHz         ; 0 (0 ps)    ; 0.09 (208 ps)    ; 50/50      ; C1      ; 500           ; 250/250 Even ; C0            ; 1       ; 0       ; DERECHO|inst1|altpll_component|auto_generated|pll1|clk[0] ;
+; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0]~cascade_in ; --           ; --   ; --    ; --               ; --          ; --               ; --         ; C0      ; 240           ; 120/120 Even ; --            ; 1       ; 0       ;                                                           ;
 ; segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0]                  ; clock0       ; 1    ; 24414 ; 0.0 MHz          ; 0 (0 ps)    ; 0.10 (416 ps)    ; 50/50      ; C1      ; 468           ; 234/234 Even ; C0            ; 1       ; 0       ; inst|inst|altpll_component|auto_generated|pll1|clk[0]     ;
 ; segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0]~cascade_in       ; --           ; --   ; --    ; --               ; --          ; --               ; --         ; C0      ; 313           ; 156/157 Odd  ; --            ; 1       ; 0       ;                                                           ;
 +---------------------------------------------------------------------------------------------------------------------+--------------+------+-------+------------------+-------------+------------------+------------+---------+---------------+--------------+---------------+---------+---------+-----------------------------------------------------------+
@@ -777,7 +779,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                           ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |autito_principal                            ; 100 (1)     ; 59 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 30   ; 0            ; 41 (1)       ; 4 (0)             ; 55 (0)           ; |autito_principal                                                                                                             ; work         ;
+; |autito_principal                            ; 96 (1)      ; 59 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 30   ; 0            ; 37 (1)       ; 4 (0)             ; 55 (0)           ; |autito_principal                                                                                                             ; work         ;
 ;    |maquina_control:inst1|                   ; 9 (9)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 4 (4)            ; |autito_principal|maquina_control:inst1                                                                                       ; work         ;
 ;    |segundero:inst|                          ; 40 (6)      ; 23 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 17 (6)       ; 4 (0)             ; 19 (0)           ; |autito_principal|segundero:inst                                                                                              ; work         ;
 ;       |altpll1:inst|                         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |autito_principal|segundero:inst|altpll1:inst                                                                                 ; work         ;
@@ -796,13 +798,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |lpm_counter5:inst13|                  ; 11 (0)      ; 11 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (0)           ; |autito_principal|segundero:inst|lpm_counter5:inst13                                                                          ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component| ; 11 (0)      ; 11 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (0)           ; |autito_principal|segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component                                        ; work         ;
 ;             |cntr_q8i:auto_generated|        ; 11 (11)     ; 11 (11)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 11 (11)          ; |autito_principal|segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated                ; work         ;
-;    |velocimetro:DERECHO|                     ; 25 (4)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (4)        ; 0 (0)             ; 16 (0)           ; |autito_principal|velocimetro:DERECHO                                                                                         ; work         ;
+;    |velocimetro:DERECHO|                     ; 23 (5)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (5)        ; 0 (0)             ; 16 (0)           ; |autito_principal|velocimetro:DERECHO                                                                                         ; work         ;
 ;       |altpll0:inst1|                        ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1                                                                           ; work         ;
 ;          |altpll:altpll_component|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component                                                   ; work         ;
 ;             |altpll0_altpll:auto_generated|  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated                     ; work         ;
-;       |counter_16:inst|                      ; 21 (21)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 16 (16)          ; |autito_principal|velocimetro:DERECHO|counter_16:inst                                                                         ; work         ;
-;    |velocimetro:IZQUIERDO|                   ; 25 (4)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 9 (4)        ; 0 (0)             ; 16 (0)           ; |autito_principal|velocimetro:IZQUIERDO                                                                                       ; work         ;
-;       |counter_16:inst|                      ; 21 (21)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 16 (16)          ; |autito_principal|velocimetro:IZQUIERDO|counter_16:inst                                                                       ; work         ;
+;       |counter_16:inst|                      ; 18 (18)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 16 (16)          ; |autito_principal|velocimetro:DERECHO|counter_16:inst                                                                         ; work         ;
+;    |velocimetro:IZQUIERDO|                   ; 23 (5)      ; 16 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (5)        ; 0 (0)             ; 16 (0)           ; |autito_principal|velocimetro:IZQUIERDO                                                                                       ; work         ;
+;       |counter_16:inst|                      ; 18 (18)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 16 (16)          ; |autito_principal|velocimetro:IZQUIERDO|counter_16:inst                                                                       ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -864,43 +866,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1]  ; 0                 ; 6       ;
 ;      - segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]  ; 0                 ; 6       ;
 ;      - maquina_control:inst1|fstate.DER                                                                                 ; 0                 ; 6       ;
-;      - maquina_control:inst1|fstate.IZQ                                                                                 ; 0                 ; 6       ;
 ;      - maquina_control:inst1|fstate.ATRAS                                                                               ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|inst3~3                                                                                    ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|inst3~3                                                                                      ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|inst3~0                                                                                    ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|inst3~0                                                                                      ; 0                 ; 6       ;
 ;      - maquina_control:inst1|IN_A[3]~0                                                                                  ; 0                 ; 6       ;
 ;      - maquina_control:inst1|IN_A[2]~1                                                                                  ; 0                 ; 6       ;
+;      - maquina_control:inst1|IN_A[1]~2                                                                                  ; 0                 ; 6       ;
+;      - maquina_control:inst1|IN_A[0]~3                                                                                  ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state1~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state2~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state3~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state4~0                                                        ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state9~0                                                        ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state10~0                                                       ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state11~0                                                       ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state12~0                                                       ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state5~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state6~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state7~0                                                        ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state8~0                                                        ; 0                 ; 6       ;
-;      - maquina_control:inst1|reg_fstate.RECTA~1                                                                         ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state9~0                                                        ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state10~0                                                       ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state11~0                                                       ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state12~0                                                       ; 0                 ; 6       ;
+;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state13~0                                                       ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state14~0                                                       ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state15~0                                                       ; 0                 ; 6       ;
-;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state13~0                                                       ; 0                 ; 6       ;
+;      - maquina_control:inst1|reg_fstate.RECTA~1                                                                         ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state1~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state2~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state3~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state4~0                                                          ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state9~0                                                          ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state10~0                                                         ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state11~0                                                         ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state12~0                                                         ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state5~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state6~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state7~0                                                          ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state8~0                                                          ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state9~0                                                          ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state10~0                                                         ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state11~0                                                         ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state12~0                                                         ; 0                 ; 6       ;
+;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state13~0                                                         ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state14~0                                                         ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state15~0                                                         ; 0                 ; 6       ;
-;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state13~0                                                         ; 0                 ; 6       ;
+;      - maquina_control:inst1|reg_fstate.IZQ~0                                                                           ; 0                 ; 6       ;
 ;      - velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state16~0                                                       ; 0                 ; 6       ;
 ;      - velocimetro:DERECHO|counter_16:inst|reg_fstate.state16~0                                                         ; 0                 ; 6       ;
 ;      - segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[10] ; 0                 ; 6       ;
@@ -930,14 +934,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 ; CLK                                                                                                      ; PIN_R8             ; 2       ; Clock                     ; no     ; --                   ; --               ; --                        ;
 ; Enable_seg                                                                                               ; PIN_T8             ; 12      ; Clock enable              ; no     ; --                   ; --               ; --                        ;
-; RESET                                                                                                    ; PIN_J15            ; 63      ; Async. clear, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; RESET                                                                                                    ; PIN_J15            ; 65      ; Async. clear, Sync. clear ; no     ; --                   ; --               ; --                        ;
 ; segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0]       ; PLL_1              ; 11      ; Clock                     ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; segundero:inst|inst11                                                                                    ; LCCOMB_X51_Y14_N24 ; 4       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; segundero:inst|inst3                                                                                     ; LCCOMB_X51_Y14_N6  ; 5       ; Clock                     ; no     ; --                   ; --               ; --                        ;
-; segundero:inst|inst7                                                                                     ; LCCOMB_X52_Y14_N10 ; 4       ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
-; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X51_Y14_N28 ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
-; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X52_Y14_N28 ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
-; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X43_Y2_N2   ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; segundero:inst|inst11                                                                                    ; LCCOMB_X51_Y17_N2  ; 4       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; segundero:inst|inst3                                                                                     ; LCCOMB_X51_Y17_N6  ; 5       ; Clock                     ; no     ; --                   ; --               ; --                        ;
+; segundero:inst|inst7                                                                                     ; LCCOMB_X52_Y17_N22 ; 4       ; Clock                     ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X51_Y17_N24 ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X52_Y17_N18 ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
+; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual ; LCCOMB_X40_Y4_N14  ; 4       ; Sync. load                ; no     ; --                   ; --               ; --                        ;
 ; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 36      ; Clock                     ; yes    ; Global Clock         ; GCLK19           ; --                        ;
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+---------------------------+--------+----------------------+------------------+---------------------------+
 
@@ -948,7 +952,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                     ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0]       ; PLL_1              ; 11      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
-; segundero:inst|inst7                                                                                     ; LCCOMB_X52_Y14_N10 ; 4       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; segundero:inst|inst7                                                                                     ; LCCOMB_X52_Y17_N22 ; 4       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
 ; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] ; PLL_4              ; 36      ; 0                                    ; Global Clock         ; GCLK19           ; --                        ;
 +----------------------------------------------------------------------------------------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
@@ -958,9 +962,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                                                              ; Fan-Out ;
 +-----------------------------------------------------------------------------------------------------------------------------------+---------+
-; RESET~input                                                                                                                       ; 63      ;
+; RESET~input                                                                                                                       ; 65      ;
 ; Enable_seg~input                                                                                                                  ; 12      ;
 ; ~GND                                                                                                                              ; 12      ;
+; maquina_control:inst1|fstate.RECTA                                                                                                ; 7       ;
 ; SENSOR[0]~input                                                                                                                   ; 5       ;
 ; SENSOR[1]~input                                                                                                                   ; 5       ;
 ; segundero:inst|inst3                                                                                                              ; 5       ;
@@ -969,30 +974,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual                          ; 4       ;
 ; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cout_actual                          ; 4       ;
 ; SEGMENTO_ENABLE~input                                                                                                             ; 3       ;
+; maquina_control:inst1|fstate.IZQ                                                                                                  ; 3       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state7                                                                                 ; 3       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state6                                                                                 ; 3       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state5                                                                                 ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state11                                                                                ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state10                                                                                ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state9                                                                                 ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state3                                                                                 ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state2                                                                                 ; 3       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state1                                                                                 ; 3       ;
-; maquina_control:inst1|fstate.RECTA                                                                                                ; 3       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state7                                                                               ; 3       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state6                                                                               ; 3       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state5                                                                               ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state11                                                                              ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state10                                                                              ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state9                                                                               ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state3                                                                               ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state2                                                                               ; 3       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state1                                                                               ; 3       ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]                   ; 3       ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1]                   ; 3       ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[2]                   ; 3       ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3]                   ; 3       ;
-; maquina_control:inst1|fstate.ATRAS                                                                                                ; 3       ;
+; maquina_control:inst1|fstate.DER                                                                                                  ; 3       ;
 ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0]                   ; 3       ;
 ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1]                   ; 3       ;
 ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[2]                   ; 3       ;
@@ -1014,86 +1007,92 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[8]                   ; 2       ;
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[9]                   ; 2       ;
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[10]                  ; 2       ;
-; maquina_control:inst1|IN_A[2]~1                                                                                                   ; 2       ;
-; maquina_control:inst1|IN_A[3]~0                                                                                                   ; 2       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state13                                                                                ; 2       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state15                                                                                ; 2       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state14                                                                                ; 2       ;
-; maquina_control:inst1|VEL_DER~0                                                                                                   ; 2       ;
-; velocimetro:DERECHO|counter_16:inst|fstate.state8                                                                                 ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state13                                                                                ; 2       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state12                                                                                ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state11                                                                                ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state10                                                                                ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state9                                                                                 ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state8                                                                                 ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|Z[3]~0                                                                                        ; 2       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state4                                                                                 ; 2       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state13                                                                              ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state3                                                                                 ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state2                                                                                 ; 2       ;
+; velocimetro:DERECHO|counter_16:inst|fstate.state1                                                                                 ; 2       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state15                                                                              ; 2       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state14                                                                              ; 2       ;
-; maquina_control:inst1|VEL_IZQ~0                                                                                                   ; 2       ;
-; velocimetro:IZQUIERDO|counter_16:inst|fstate.state8                                                                               ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state13                                                                              ; 2       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state12                                                                              ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state11                                                                              ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state10                                                                              ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state9                                                                               ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state8                                                                               ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|Z[3]~0                                                                                      ; 2       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state4                                                                               ; 2       ;
-; maquina_control:inst1|fstate.IZQ                                                                                                  ; 2       ;
-; maquina_control:inst1|fstate.DER                                                                                                  ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state3                                                                               ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state2                                                                               ; 2       ;
+; velocimetro:IZQUIERDO|counter_16:inst|fstate.state1                                                                               ; 2       ;
 ; segundero:inst|inst11~2                                                                                                           ; 1       ;
 ; segundero:inst|inst11~1                                                                                                           ; 1       ;
 ; segundero:inst|inst11~0                                                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state16~0                                                                          ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state16~0                                                                        ; 1       ;
 ; maquina_control:inst1|Selector3~0                                                                                                 ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state16~0                                                                        ; 1       ;
+; maquina_control:inst1|Selector1~0                                                                                                 ; 1       ;
+; maquina_control:inst1|reg_fstate.IZQ~0                                                                                            ; 1       ;
 ; segundero:inst|inst7                                                                                                              ; 1       ;
 ; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|cmpr_qgc:cmpr1|aneb_result_wire[0]~0 ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|reg_fstate.state13~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state15~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state14~0                                                                          ; 1       ;
-; maquina_control:inst1|Selector2~0                                                                                                 ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|reg_fstate.state8~0                                                                           ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|reg_fstate.state7~0                                                                           ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|reg_fstate.state6~0                                                                           ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|reg_fstate.state5~0                                                                           ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|reg_fstate.state13~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state12~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state11~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state10~0                                                                          ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state9~0                                                                           ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|reg_fstate.state8~0                                                                           ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|reg_fstate.state7~0                                                                           ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|reg_fstate.state6~0                                                                           ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|reg_fstate.state5~0                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state4~0                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state3~0                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state2~0                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|reg_fstate.state1~0                                                                           ; 1       ;
 ; velocimetro:DERECHO|counter_16:inst|fstate.state16                                                                                ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state13~0                                                                        ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state15~0                                                                        ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state14~0                                                                        ; 1       ;
-; maquina_control:inst1|Selector1~0                                                                                                 ; 1       ;
 ; maquina_control:inst1|reg_fstate.RECTA~1                                                                                          ; 1       ;
 ; maquina_control:inst1|reg_fstate.RECTA~0                                                                                          ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state8~0                                                                         ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state7~0                                                                         ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state6~0                                                                         ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state5~0                                                                         ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state15~0                                                                        ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state14~0                                                                        ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state13~0                                                                        ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state12~0                                                                        ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state11~0                                                                        ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state10~0                                                                        ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state9~0                                                                         ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state8~0                                                                         ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state7~0                                                                         ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state6~0                                                                         ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state5~0                                                                         ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state4~0                                                                         ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state3~0                                                                         ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state2~0                                                                         ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|reg_fstate.state1~0                                                                         ; 1       ;
 ; velocimetro:IZQUIERDO|counter_16:inst|fstate.state16                                                                              ; 1       ;
+; maquina_control:inst1|IN_A[0]~3                                                                                                   ; 1       ;
+; maquina_control:inst1|IN_A[1]~2                                                                                                   ; 1       ;
+; maquina_control:inst1|IN_A[2]~1                                                                                                   ; 1       ;
+; maquina_control:inst1|IN_A[3]~0                                                                                                   ; 1       ;
+; velocimetro:DERECHO|inst3~4                                                                                                       ; 1       ;
 ; velocimetro:DERECHO|inst3~3                                                                                                       ; 1       ;
 ; velocimetro:DERECHO|inst3~2                                                                                                       ; 1       ;
 ; velocimetro:DERECHO|inst3~1                                                                                                       ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|WideOr18~1                                                                                    ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|Z[0]~0                                                                                        ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|WideOr18~0                                                                                    ; 1       ;
 ; velocimetro:DERECHO|inst3~0                                                                                                       ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|WideOr17~1                                                                                    ; 1       ;
-; velocimetro:DERECHO|counter_16:inst|WideOr17~0                                                                                    ; 1       ;
+; velocimetro:DERECHO|counter_16:inst|Z[3]~1                                                                                        ; 1       ;
+; velocimetro:IZQUIERDO|inst3~4                                                                                                     ; 1       ;
 ; velocimetro:IZQUIERDO|inst3~3                                                                                                     ; 1       ;
 ; velocimetro:IZQUIERDO|inst3~2                                                                                                     ; 1       ;
 ; velocimetro:IZQUIERDO|inst3~1                                                                                                     ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|WideOr18~1                                                                                  ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|Z[0]~0                                                                                      ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|WideOr18~0                                                                                  ; 1       ;
 ; velocimetro:IZQUIERDO|inst3~0                                                                                                     ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|WideOr17~1                                                                                  ; 1       ;
-; velocimetro:IZQUIERDO|counter_16:inst|WideOr17~0                                                                                  ; 1       ;
+; velocimetro:IZQUIERDO|counter_16:inst|Z[3]~1                                                                                      ; 1       ;
 ; segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_fbout                                 ; 1       ;
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_comb_bita10                  ; 1       ;
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_comb_bita9~COUT              ; 1       ;
@@ -1144,6 +1143,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_comb_bita0~COUT              ; 1       ;
 ; segundero:inst|lpm_counter3:inst18|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_comb_bita0                   ; 1       ;
 ; velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_fbout                           ; 1       ;
+; maquina_control:inst1|fstate.ATRAS                                                                                                ; 1       ;
 +-----------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -1152,21 +1152,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 75 / 71,559 ( < 1 % ) ;
-; C16 interconnects           ; 8 / 2,597 ( < 1 % )   ;
-; C4 interconnects            ; 47 / 46,848 ( < 1 % ) ;
-; Direct links                ; 24 / 71,559 ( < 1 % ) ;
+; Block interconnects         ; 67 / 71,559 ( < 1 % ) ;
+; C16 interconnects           ; 11 / 2,597 ( < 1 % )  ;
+; C4 interconnects            ; 58 / 46,848 ( < 1 % ) ;
+; Direct links                ; 16 / 71,559 ( < 1 % ) ;
 ; Global clocks               ; 3 / 20 ( 15 % )       ;
-; Local interconnects         ; 81 / 24,624 ( < 1 % ) ;
-; R24 interconnects           ; 12 / 2,496 ( < 1 % )  ;
-; R4 interconnects            ; 38 / 62,424 ( < 1 % ) ;
+; Local interconnects         ; 74 / 24,624 ( < 1 % ) ;
+; R24 interconnects           ; 15 / 2,496 ( < 1 % )  ;
+; R4 interconnects            ; 41 / 62,424 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 11.11) ; Number of LABs  (Total = 9) ;
+; Number of Logic Elements  (Average = 13.71) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -1174,35 +1174,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4                                           ; 0                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 4                           ;
+; 7                                           ; 0                           ;
+; 8                                           ; 1                           ;
+; 9                                           ; 1                           ;
 ; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
+; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 2                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 1                           ;
+; 16                                          ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.78) ; Number of LABs  (Total = 9) ;
+; LAB-wide Signals  (Average = 2.00) ; Number of LABs  (Total = 7) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 4                           ;
-; 1 Clock                            ; 8                           ;
+; 1 Async. clear                     ; 3                           ;
+; 1 Clock                            ; 6                           ;
 ; 1 Clock enable                     ; 3                           ;
 ; 1 Sync. clear                      ; 1                           ;
+; 2 Clocks                           ; 1                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 17.67) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced  (Average = 22.14) ; Number of LABs  (Total = 7) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1215,12 +1216,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
 ; 10                                           ; 0                           ;
-; 11                                           ; 1                           ;
-; 12                                           ; 0                           ;
-; 13                                           ; 2                           ;
+; 11                                           ; 0                           ;
+; 12                                           ; 1                           ;
+; 13                                           ; 1                           ;
 ; 14                                           ; 0                           ;
-; 15                                           ; 1                           ;
-; 16                                           ; 2                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
 ; 19                                           ; 0                           ;
@@ -1229,39 +1230,43 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 22                                           ; 0                           ;
 ; 23                                           ; 0                           ;
 ; 24                                           ; 0                           ;
-; 25                                           ; 3                           ;
+; 25                                           ; 2                           ;
+; 26                                           ; 1                           ;
+; 27                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 4.22) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced Out  (Average = 5.00) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
-; 2                                               ; 2                           ;
-; 3                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 0                           ;
 ; 4                                               ; 2                           ;
-; 5                                               ; 1                           ;
-; 6                                               ; 3                           ;
+; 5                                               ; 2                           ;
+; 6                                               ; 0                           ;
+; 7                                               ; 1                           ;
+; 8                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 5.00) ; Number of LABs  (Total = 9) ;
+; Number of Distinct Inputs  (Average = 5.43) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
-; 3                                           ; 0                           ;
-; 4                                           ; 3                           ;
-; 5                                           ; 3                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 0                           ;
-; 8                                           ; 2                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 1                           ;
+; 4                                           ; 2                           ;
+; 5                                           ; 0                           ;
+; 6                                           ; 2                           ;
+; 7                                           ; 1                           ;
+; 8                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1402,7 +1407,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Clock(s)                                                                                                 ; Destination Clock(s)                                                                                            ; Delay Added in ns ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
 ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated|counter_reg_bit[0] ; 2.1               ;
-; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; 1.8               ;
+; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; 1.7               ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using either the TimeQuest Timing Analyzer or the Classic Timing Analyzer.
@@ -1414,13 +1419,13 @@ This will disable optimization of problematic paths and expose them for further 
 ; Source Register                                                                                                 ; Destination Register                                                                                            ; Delay Added in ns ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; 1.014             ;
-; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; 0.875             ;
-; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1] ; 0.617             ;
+; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[0] ; 0.874             ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.609             ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[2] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.609             ;
 ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1] ; segundero:inst|lpm_counter3:inst16|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.609             ;
-; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.341             ;
-; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[2] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.341             ;
+; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[1] ; 0.492             ;
+; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.340             ;
+; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[2] ; segundero:inst|lpm_counter3:inst17|lpm_counter:LPM_COUNTER_component|cntr_i7k:auto_generated|counter_reg_bit[3] ; 0.340             ;
 +-----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
 
@@ -1434,11 +1439,11 @@ Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Info (15535): Implemented PLL "velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1" as Cyclone IV E PLL type
-    Info (15099): Implementing clock multiplication of 1, clock division of 125, and phase shift of 0 degrees (0 ps) for velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] port
+    Info (15099): Implementing clock multiplication of 1, clock division of 10000, and phase shift of 0 degrees (0 ps) for velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] port
 Info (15535): Implemented PLL "altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|pll1" as Cyclone IV E PLL type
     Info (15099): Implementing clock multiplication of 1, clock division of 10000, and phase shift of 0 degrees (0 ps) for altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated|wire_pll1_clk[0] port
 Info (15535): Implemented PLL "velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|pll1" as Cyclone IV E PLL type
-    Info (15099): Implementing clock multiplication of 1, clock division of 125, and phase shift of 0 degrees (0 ps) for velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] port
+    Info (15099): Implementing clock multiplication of 1, clock division of 10000, and phase shift of 0 degrees (0 ps) for velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated|wire_pll1_clk[0] port
 Info (15535): Implemented PLL "segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|pll1" as Cyclone IV E PLL type
     Info (15099): Implementing clock multiplication of 1, clock division of 24414, and phase shift of 0 degrees (0 ps) for segundero:inst|altpll1:inst|altpll:altpll_component|altpll1_altpll:auto_generated|wire_pll1_clk[0] port
 Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
@@ -1484,35 +1489,35 @@ Info (176353): Automatically promoted node segundero:inst|inst7
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X43_Y11 to location X53_Y22
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.81 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.28 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:03
-Info (144001): Generated suppressed messages file C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/autito.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (144001): Generated suppressed messages file C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/autito.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4930 megabytes
-    Info: Processing ended: Mon Oct 30 20:47:23 2023
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4932 megabytes
+    Info: Processing ended: Mon Oct 30 22:59:11 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/autito.fit.smsg.
+The suppressed messages can be found in C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/autito.fit.smsg.
 
 
