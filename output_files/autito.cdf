@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE22F17) Path("C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/") File("autito.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE22F17) Path("C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/") File("autito.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

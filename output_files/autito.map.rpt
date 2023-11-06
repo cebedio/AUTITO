@@ -1,5 +1,5 @@
 Analysis & Synthesis report for autito
-Mon Oct 30 20:46:58 2023
+Mon Oct 30 22:59:00 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -56,13 +56,13 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 30 20:46:58 2023           ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 30 22:59:00 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; autito                                          ;
 ; Top-level Entity Name              ; autito_principal                                ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 96                                              ;
-;     Total combinational functions  ; 96                                              ;
+; Total logic elements               ; 92                                              ;
+;     Total combinational functions  ; 92                                              ;
 ;     Dedicated logic registers      ; 59                                              ;
 ; Total registers                    ; 59                                              ;
 ; Total pins                         ; 30                                              ;
@@ -171,47 +171,47 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
-; maquina_control.vhd              ; yes             ; User VHDL File                     ; C:/Users/Celeste/Desktop/Lab_autito_2023/maquina_control.vhd              ;         ;
-; counter_16.vhd                   ; yes             ; User VHDL File                     ; C:/Users/Celeste/Desktop/Lab_autito_2023/counter_16.vhd                   ;         ;
-; lpm_compare0.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_compare0.vhd                 ;         ;
-; velocimetro.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023/velocimetro.bdf                  ;         ;
-; altpll0.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/altpll0.vhd                      ;         ;
-; autito_principal.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023/autito_principal.bdf             ;         ;
-; segundero.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023/segundero.bdf                    ;         ;
-; altpll1.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/altpll1.vhd                      ;         ;
-; lpm_counter5.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter5.vhd                 ;         ;
-; lpm_counter3.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter3.vhd                 ;         ;
-; output_files/altpll3.vhd         ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/altpll3.vhd         ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf         ;         ;
-; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc            ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc            ;         ;
-; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc          ;         ;
-; db/cmpr_2mg.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/cmpr_2mg.tdf                  ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf              ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc         ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc       ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc       ;         ;
-; db/altpll0_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll0_altpll.v              ;         ;
-; db/altpll3_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll3_altpll.v              ;         ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf         ;         ;
-; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc         ;         ;
-; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc            ;         ;
-; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc         ;         ;
-; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc         ;         ;
-; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc              ;         ;
-; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc ;         ;
-; db/cntr_i7k.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/cntr_i7k.tdf                  ;         ;
-; db/cmpr_qgc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/cmpr_qgc.tdf                  ;         ;
-; db/cntr_q8i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/cntr_q8i.tdf                  ;         ;
-; db/altpll1_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023/db/altpll1_altpll.v              ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
+; maquina_control.vhd              ; yes             ; User VHDL File                     ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/maquina_control.vhd      ;         ;
+; counter_16.vhd                   ; yes             ; User VHDL File                     ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/counter_16.vhd           ;         ;
+; lpm_compare0.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_compare0.vhd         ;         ;
+; velocimetro.bdf                  ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/velocimetro.bdf          ;         ;
+; altpll0.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/altpll0.vhd              ;         ;
+; autito_principal.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/autito_principal.bdf     ;         ;
+; segundero.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/segundero.bdf            ;         ;
+; altpll1.vhd                      ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/altpll1.vhd              ;         ;
+; lpm_counter5.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter5.vhd         ;         ;
+; lpm_counter3.vhd                 ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter3.vhd         ;         ;
+; output_files/altpll3.vhd         ; yes             ; User Wizard-Generated File         ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/altpll3.vhd ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.tdf            ;         ;
+; comptree.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/comptree.inc               ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altshift.inc               ;         ;
+; aglobal130.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc             ;         ;
+; db/cmpr_2mg.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/cmpr_2mg.tdf          ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altpll.tdf                 ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_pll.inc            ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratixii_pll.inc          ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cycloneii_pll.inc          ;         ;
+; db/altpll0_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/altpll0_altpll.v      ;         ;
+; db/altpll3_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/altpll3_altpll.v      ;         ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.tdf            ;         ;
+; lpm_constant.inc                 ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_constant.inc           ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc             ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.inc            ;         ;
+; cmpconst.inc                     ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/cmpconst.inc               ;         ;
+; lpm_compare.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_compare.inc            ;         ;
+; lpm_counter.inc                  ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_counter.inc            ;         ;
+; dffeea.inc                       ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/dffeea.inc                 ;         ;
+; alt_counter_stratix.inc          ; yes             ; Megafunction                       ; c:/altera/13.0sp1/quartus/libraries/megafunctions/alt_counter_stratix.inc    ;         ;
+; db/cntr_i7k.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/cntr_i7k.tdf          ;         ;
+; db/cmpr_qgc.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/cmpr_qgc.tdf          ;         ;
+; db/cntr_q8i.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/cntr_q8i.tdf          ;         ;
+; db/altpll1_altpll.v              ; yes             ; Auto-Generated Megafunction        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/db/altpll1_altpll.v      ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -219,16 +219,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 96          ;
+; Estimated Total logic elements              ; 92          ;
 ;                                             ;             ;
-; Total combinational functions               ; 96          ;
+; Total combinational functions               ; 92          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 25          ;
-;     -- 3 input functions                    ; 2           ;
-;     -- <=2 input functions                  ; 69          ;
+;     -- 4 input functions                    ; 21          ;
+;     -- 3 input functions                    ; 7           ;
+;     -- <=2 input functions                  ; 64          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 74          ;
+;     -- normal mode                          ; 70          ;
 ;     -- arithmetic mode                      ; 22          ;
 ;                                             ;             ;
 ; Total registers                             ; 59          ;
@@ -241,9 +241,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- PLLs                                 ; 4           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; RESET~input ;
-; Maximum fan-out                             ; 63          ;
-; Total fan-out                               ; 476         ;
-; Average fan-out                             ; 2.17        ;
+; Maximum fan-out                             ; 65          ;
+; Total fan-out                               ; 464         ;
+; Average fan-out                             ; 2.16        ;
 +---------------------------------------------+-------------+
 
 
@@ -252,7 +252,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                           ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |autito_principal                            ; 96 (1)            ; 59 (0)       ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |autito_principal                                                                                                             ; work         ;
+; |autito_principal                            ; 92 (1)            ; 59 (0)       ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |autito_principal                                                                                                             ; work         ;
 ;    |altpll3:inst4|                           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|altpll3:inst4                                                                                               ; work         ;
 ;       |altpll:altpll_component|              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|altpll3:inst4|altpll:altpll_component                                                                       ; work         ;
 ;          |altpll3_altpll:auto_generated|     ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|altpll3:inst4|altpll:altpll_component|altpll3_altpll:auto_generated                                         ; work         ;
@@ -274,36 +274,36 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |lpm_counter5:inst13|                  ; 11 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|segundero:inst|lpm_counter5:inst13                                                                          ; work         ;
 ;          |lpm_counter:LPM_COUNTER_component| ; 11 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component                                        ; work         ;
 ;             |cntr_q8i:auto_generated|        ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|segundero:inst|lpm_counter5:inst13|lpm_counter:LPM_COUNTER_component|cntr_q8i:auto_generated                ; work         ;
-;    |velocimetro:DERECHO|                     ; 25 (4)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO                                                                                         ; work         ;
+;    |velocimetro:DERECHO|                     ; 23 (5)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO                                                                                         ; work         ;
 ;       |altpll0:inst1|                        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1                                                                           ; work         ;
 ;          |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component                                                   ; work         ;
 ;             |altpll0_altpll:auto_generated|  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated                     ; work         ;
-;       |counter_16:inst|                      ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO|counter_16:inst                                                                         ; work         ;
-;    |velocimetro:IZQUIERDO|                   ; 25 (4)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO                                                                                       ; work         ;
+;       |counter_16:inst|                      ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:DERECHO|counter_16:inst                                                                         ; work         ;
+;    |velocimetro:IZQUIERDO|                   ; 23 (5)            ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO                                                                                       ; work         ;
 ;       |altpll0:inst1|                        ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO|altpll0:inst1                                                                         ; work         ;
 ;          |altpll:altpll_component|           ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component                                                 ; work         ;
 ;             |altpll0_altpll:auto_generated|  ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component|altpll0_altpll:auto_generated                   ; work         ;
-;       |counter_16:inst|                      ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO|counter_16:inst                                                                       ; work         ;
+;       |counter_16:inst|                      ; 18 (18)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |autito_principal|velocimetro:IZQUIERDO|counter_16:inst                                                                       ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                                                          ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------+-------------------------------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                            ; IP Include File                                                   ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------+-------------------------------------------------------------------+
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:DERECHO|altpll0:inst1        ; C:/Users/Celeste/Desktop/Lab_autito_2023/altpll0.vhd              ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:DERECHO|lpm_compare0:inst2   ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_compare0.vhd         ;
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|altpll1:inst              ; C:/Users/Celeste/Desktop/Lab_autito_2023/altpll1.vhd              ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter5:inst13       ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter5.vhd         ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst16       ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter3.vhd         ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst17       ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter3.vhd         ;
-; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst18       ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_counter3.vhd         ;
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|altpll3:inst4                            ; C:/Users/Celeste/Desktop/Lab_autito_2023/output_files/altpll3.vhd ;
-; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:IZQUIERDO|altpll0:inst1      ; C:/Users/Celeste/Desktop/Lab_autito_2023/altpll0.vhd              ;
-; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:IZQUIERDO|lpm_compare0:inst2 ; C:/Users/Celeste/Desktop/Lab_autito_2023/lpm_compare0.vhd         ;
-+--------+--------------+---------+--------------+--------------+------------------------------------------------------------+-------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                                                     ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------+------------------------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                            ; IP Include File                                                              ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------+------------------------------------------------------------------------------+
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:DERECHO|altpll0:inst1        ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/altpll0.vhd              ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:DERECHO|lpm_compare0:inst2   ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_compare0.vhd         ;
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|altpll1:inst              ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/altpll1.vhd              ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter5:inst13       ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter5.vhd         ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst16       ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter3.vhd         ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst17       ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter3.vhd         ;
+; Altera ; LPM_COUNTER  ; 13.0    ; N/A          ; N/A          ; |autito_principal|segundero:inst|lpm_counter3:inst18       ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_counter3.vhd         ;
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|altpll3:inst4                            ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/output_files/altpll3.vhd ;
+; Altera ; ALTPLL       ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:IZQUIERDO|altpll0:inst1      ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/altpll0.vhd              ;
+; Altera ; LPM_COMPARE  ; 13.0    ; N/A          ; N/A          ; |autito_principal|velocimetro:IZQUIERDO|lpm_compare0:inst2 ; C:/Users/Celeste/Desktop/Lab_autito_2023 - copiaGIT/lpm_compare0.vhd         ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------+------------------------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -375,7 +375,7 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 59    ;
-; Number of registers using Synchronous Clear  ; 3     ;
+; Number of registers using Synchronous Clear  ; 2     ;
 ; Number of registers using Synchronous Load   ; 12    ;
 ; Number of registers using Asynchronous Clear ; 23    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
@@ -460,7 +460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK3_DIVIDE_BY                ; 1                         ; Untyped                                      ;
 ; CLK2_DIVIDE_BY                ; 1                         ; Untyped                                      ;
 ; CLK1_DIVIDE_BY                ; 1                         ; Untyped                                      ;
-; CLK0_DIVIDE_BY                ; 125                       ; Signed Integer                               ;
+; CLK0_DIVIDE_BY                ; 10000                     ; Signed Integer                               ;
 ; CLK9_PHASE_SHIFT              ; 0                         ; Untyped                                      ;
 ; CLK8_PHASE_SHIFT              ; 0                         ; Untyped                                      ;
 ; CLK7_PHASE_SHIFT              ; 0                         ; Untyped                                      ;
@@ -1232,7 +1232,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CLK3_DIVIDE_BY                ; 1                         ; Untyped                                    ;
 ; CLK2_DIVIDE_BY                ; 1                         ; Untyped                                    ;
 ; CLK1_DIVIDE_BY                ; 1                         ; Untyped                                    ;
-; CLK0_DIVIDE_BY                ; 125                       ; Signed Integer                             ;
+; CLK0_DIVIDE_BY                ; 10000                     ; Signed Integer                             ;
 ; CLK9_PHASE_SHIFT              ; 0                         ; Untyped                                    ;
 ; CLK8_PHASE_SHIFT              ; 0                         ; Untyped                                    ;
 ; CLK7_PHASE_SHIFT              ; 0                         ; Untyped                                    ;
@@ -2082,7 +2082,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -2092,7 +2092,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Oct 30 20:46:51 2023
+    Info: Processing started: Mon Oct 30 22:58:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off autito -c autito
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file maquina_control.vhd
@@ -2146,7 +2146,7 @@ Info (12128): Elaborating entity "altpll" for hierarchy "velocimetro:IZQUIERDO|a
 Info (12130): Elaborated megafunction instantiation "velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component"
 Info (12133): Instantiated megafunction "velocimetro:IZQUIERDO|altpll0:inst1|altpll:altpll_component" with the following parameter:
     Info (12134): Parameter "bandwidth_type" = "AUTO"
-    Info (12134): Parameter "clk0_divide_by" = "125"
+    Info (12134): Parameter "clk0_divide_by" = "10000"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_phase_shift" = "0"
@@ -2355,15 +2355,15 @@ Info (12128): Elaborating entity "altpll1_altpll" for hierarchy "segundero:inst|
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 4 node(s), including 0 DDIO, 4 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 130 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 126 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
     Info (21059): Implemented 23 output pins
-    Info (21061): Implemented 96 logic cells
+    Info (21061): Implemented 92 logic cells
     Info (21065): Implemented 4 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Mon Oct 30 20:46:58 2023
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Mon Oct 30 22:59:00 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
 
 
